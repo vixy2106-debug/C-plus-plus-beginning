@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+    // Assignment Operator
+    int a=3 , b=4;
+    //Arthematic operator (+,-,*,/,%,a++,a--,++a,--a)
+    // Comparison operator
+    cout<<"The value of a==b is "<< (a==b)<<endl;
+    cout<<"The value of a!=b is "<< (a!=b)<<endl;
+    cout<<"The value of a>b is "<< (a>b)<<endl;
+    cout<<"The value of a<=b is "<< (a<=b)<<endl;
+    // Logical Operator
+    cout<< ((a>b)&&(a==b)) <<endl;
+    cout<< ((a>b)||(a<=b)) <<endl;
+    cout<<"LOGICAL NOT "<<(!(a<=b)) <<endl;
+    return 0;
+} 
