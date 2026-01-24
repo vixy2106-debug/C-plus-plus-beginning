@@ -1,0 +1,86 @@
+#include<iostream>
+using namespace std;
+
+// Star rectangle
+int main(){
+    int rows,column;
+    cout << "Enter the num of rows = ";
+    cin >> rows;
+    cout << "Enter the num of column = ";
+    cin >> column;
+    for (int i = 0; i < rows; i++){
+        for(int j = 0; j<column; j++){
+        cout << "*" ;
+    }
+    cout << endl;
+}
+}
+
+// Star wedge
+int main(){
+    int rows,column;
+    cout << "Enter the num of rows = ";
+    cin >> rows;
+    for (int i = 0; i < rows; i++){
+        for(int j = 0; j< i; j++){
+        cout << "*" ;
+    }
+    cout << endl;
+}
+}
+
+// Star Pyramid
+
+int main(){
+    int n,i;
+    cout << "Enter the num of rows = ";
+    cin >> n;
+    for (int i = 0; i < n; i++){
+        for(int j = 0; j<n-i; j++){
+        cout << " " ;
+    }
+    for(int k=0;k<2*i+1;k++){
+        cout << "*";
+}
+cout << endl;
+}
+}
+
+// Number square
+int main(){
+    int n;
+    cout << "Enter n = ";
+    cin >> n;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+}
+
+// Number pattern 2
+int main(){
+    int n;
+    cout << "Enter n = ";
+    cin >> n;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+}
+
+// Alphabetical square
+int main(){
+    int n;
+    cout << "Enter n = ";
+    cin >> n;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            cout << char(j+64) << " ";
+        }
+        cout << endl;
+    }
+}
