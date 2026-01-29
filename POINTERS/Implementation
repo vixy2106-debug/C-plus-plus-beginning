@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+// Implementation of Pointer
+int a=4;
+int *b=&a;
+cout <<"The address of a is "<< b<< endl;
+cout <<"The value of a is "<< *b<< endl;
+
+// POINTER TO POINTER
+int**c= &b; // here C is a pointer which stores the address of another pointer b
+cout << "The address of b is "<< &b <<endl;
+cout << "The address of b is "<< c <<endl;
+cout << "The value at address of c is "<< *c <<endl;
+cout << "The value at address of (address(c)) is "<< **c <<endl;
+return 0;
+}
