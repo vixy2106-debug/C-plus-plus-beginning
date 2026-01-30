@@ -1,0 +1,17 @@
+#include<iostream>
+int fact(int n){
+    if(n==0 || n==1){
+        return 1;
+    }
+    else{ 
+        return n*(fact(n-1));
+    }
+}
+using namespace std;
+int main(){
+     int n;
+     cout << "Enter n :";
+     cin >> n;
+     cout << "The factorial of "<<n<<" = "<<fact(n);
+return 0;
+}
